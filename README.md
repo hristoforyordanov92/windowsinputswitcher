@@ -8,17 +8,24 @@ I currently have 4 input languages installed on my computer:
 English, Bulgarian, Japanese and German.
 Switching between them using Alt + Shift is extremely annoying, especially when working mostly with the first two.
 Yes, there is an option provided by Microsoft to switch to a specific language using a special hotkey (Alt + Shift + <number>) but it only works for English and Japanese for some reason...
+
 So I wanted to make my own way of switching language that ACTUALLY works.
 
 # Problems with the script
 
 The script is not user-friendly at all! I HATE this fact, but I'm too lazy to fix it at this point, as I'm the only person using this script.
 Currently you'll have to know a little bit of AHK, or at least be motivated enough to open the script with notepad and modify it to your needs.
-The possible lanauges that the script can switch to must be changed manually and their IDs must be discovered manually using a special hotkey (you have to enable it by uncommenting the code of the hotkey)
+
+The possible languages that the script can switch to must be changed manually and their IDs must be discovered manually using a special hotkey (you have to enable it by uncommenting the code of the hotkey)
+
 Then you also have to make sure that your hotkey works for switching languages. It's currently using the hotkey combination of that keyboard button that simulates a right mouse click + a number, in order to switch to the specific language.
+
 Switching between the languages is done by simulating the press of Alt + Shift key combination, which may not work on your computer, because of your current language switching settings. So you'll need to change these keys yourself or change the keybinds you use to switch languages.
+
 Also, if you have more or less languages than me, you'll have to add the new hotkeys yourself (which is easy enough, but still not user friendly).
+
 There might be additional problems with the script that I haven't accounted for, but I have no userbase, so no way to fix those potential bugs.
+
 Maybe I will make this more user-friendly, if at least 1 more person wants to use this script. Otherwise, I won't bother.
 
 # Why simulate Alt + Shift instead of using DLL calls to change languages?
