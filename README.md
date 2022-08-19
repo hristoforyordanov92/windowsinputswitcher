@@ -7,7 +7,7 @@ An AHK script for Windows 10 (potentially supports more Windows versions) for qu
 I currently have 4 input languages installed on my computer:
 English, Bulgarian, Japanese and German.
 Switching between them using Alt + Shift is extremely annoying, especially when working mostly with the first two.
-Yes, there is an option provided by Microsoft to switch to a specific language using a special hotkey (Alt + Shift + <number>) but it only works for English and Japanese for some reason...
+Yes, there is an option provided by Microsoft to switch to a specific language using a special hotkey (Alt + Shift + NUMBER) but it only works for English and Japanese for some reason...
 
 So I wanted to make my own way of switching language that ACTUALLY works.
 
