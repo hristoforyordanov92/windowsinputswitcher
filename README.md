@@ -28,6 +28,13 @@ There might be additional problems with the script that I haven't accounted for,
 
 Maybe I will make this more user-friendly, if at least 1 more person wants to use this script. Otherwise, I won't bother.
 
+# How to use it?
+
+1. Go to https://www.autohotkey.com/ and download the latest version of AHK.
+2. Download the script from this repository and double-click it. The script will be loaded and you'll be able to use it (assuming you've figured a way to work around all the issues from the topic above!)
+3. Place the script in your Startup folder in order to have it automatically load with Windows. (use Google to find out how to put a program in Startup for your Windows)
+4. After spending 1 hour of trying to run the script, see that it doesn't work and [open an issue](https://github.com/hristoforyordanov92/windowsinputswitcher/issues/new) in this repository. I will try to help :)
+
 # Why simulate Alt + Shift instead of using DLL calls to change languages?
 
 I tried using lots of different DLL calls taken from pinvoke, even using C# language, but I lost my patience, as nothing was working as good as I expected it to.
