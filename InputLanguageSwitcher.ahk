@@ -1,5 +1,7 @@
 ; ===== USER-DEFINED VALUES =====
 
+global iconFileName := A_WorkingDir . "\icon.ico"
+
 ; TODO: Maybe fill this array automatically, so the users don't have to do it themselves.
 
 ; Filled by the user with the desired languages in the exact same order as they appear in Windows.
@@ -29,6 +31,10 @@ Loop % inputLanguageArray.Length()
 }
 ; Free up some memory. This array is not used anymore.
 inputLanguageArray := []
+
+; Add an icon :)
+IfExist, %iconFileName%
+    Menu, Tray, Icon, %iconFileName%
 
 ; ===== HOTKEYS =====
 
