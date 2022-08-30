@@ -71,6 +71,14 @@ GetCurrentLayoutIndex()
 ; This will change the language input. It changes it by simulating Alt + Shift key presses, which might not work for plenty of reasons. Holding/pressing ctrl/alt/shift might block the change.
 ChangeInputLayout(nextLayoutIndex)
 {
+    ; Quick and dirty way to disable the script when Citrix (software) is open and active. We could also add a check for RDP here...
+    WinGet, Active_ID, ID, A
+    WinGet, Active_Process, ProcessName, ahk_id %Active_ID%
+    if (Active_Process == "CDViewer.exe")
+    {
+        return
+    }
+    
     currentLayoutIndex := GetCurrentLayoutIndex()
     if (currentLayoutIndex == nextLayoutIndex)
     {
